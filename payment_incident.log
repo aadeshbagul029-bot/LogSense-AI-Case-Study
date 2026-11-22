@@ -1,0 +1,11 @@
+2026-11-21 09:14:02 INFO  [payment-api] Request received payment_id=PAY-1001
+2026-11-21 09:14:04 ERROR [payment-api] Upstream request timed out after 30000ms endpoint=/v1/charge payment_id=PAY-1001
+2026-11-21 09:14:05 ERROR [payment-api] Database connection failed: connection pool exhausted
+2026-11-21 09:14:08 WARN  [payment-api] Retry attempt 1/3 payment_id=PAY-1001
+2026-11-21 09:14:12 ERROR [payment-api] Upstream request timed out after 30000ms endpoint=/v1/charge payment_id=PAY-1002
+2026-11-21 09:14:13 ERROR [payment-api] Database connection failed: connection pool exhausted
+2026-11-21 09:14:17 WARN  [payment-api] Retry attempt 2/3 payment_id=PAY-1002
+2026-11-21 09:14:22 ERROR [payment-api] Upstream request timed out after 30000ms endpoint=/v1/charge payment_id=PAY-1003
+2026-11-21 09:14:23 CRITICAL [payment-api] Payment transaction failed payment_id=PAY-1003
+2026-11-21 09:14:25 INFO  [auth-service] Health check passed
+2026-11-21 09:14:28 WARN  [payment-api] Elevated response latency: 31.2s
